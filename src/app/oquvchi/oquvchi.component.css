@@ -1,0 +1,27 @@
+.qwert {
+   display: flex;
+   height: 40px;
+   padding-top: 0;
+   margin-bottom: 15px;
+   opacity: 0.9;
+}
+
+.ismi {
+    width: 400px;
+}
+
+.javob {
+    width: 250px;
+}
+
+.samaradorlik {
+    width: 300px;
+}
+
+p {
+    cursor: pointer
+}
+
+.yulduz {
+    margin-top: 10px;
+}

@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <mat-card align="center" class="toolbar">
+        <h1>Online baholash tizimi!</h1>
+    </mat-card>
+    <div class="container">
+            <mat-form-field class="maydon">
+                <mat-label>Qidirilayotgan o'quvchi</mat-label>
+                <input matInput [formControl]="name" class="kiritish">
+            </mat-form-field>
+            &nbsp; <button mat-raised-button>Saralash</button> &nbsp;
+            <button mat-raised-button (click)="reset()">Qaytadan</button>
+            <br>
+            <oquvchi ism_sharif="Ism sharifi" togri_javob="To'gri javoblar" ustun="Status" samaradorlik="Samaradorlik">
+            </oquvchi>
+            <br>
+            <oquvchi class="study" *ngFor="let oquvchi of list" [ism_sharif]="oquvchi.ism_sharif"
+                [togri_javob]="oquvchi.togri_javoblar" [yulduz]="oquvchi.togri_javob" [samaradorlik]="oquvchi.samaradorlik"
+                (oquvchiClick)="bajar(oquvchi)"></oquvchi>
+    </div>
+</div>
